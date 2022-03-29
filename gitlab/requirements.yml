@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: yes
+# Install and configure GitLab Community Edition
+  tasks:
+  - name: install gitlab-ce
+    include_tasks: gitlab-ce.yml
+
+---
+- hosts: localhost
+  remote_user: root
+  roles:
+    - gitrole
