@@ -31,5 +31,5 @@
 
 - name: (GITLAB-CE) Configure GitLab Community Edition
   command: gitlab-ctl reconfigure
-
+#
 #  when: gitlabupdate|changed
